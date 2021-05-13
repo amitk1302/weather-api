@@ -30,6 +30,12 @@ public class ApiClientServiceImpl implements IApiClientService {
 	@Autowired
 	private RestTemplate restTemplate;
 
+	/**
+	 * method to call rest api
+	 * @param ApiRequest
+	 * @param Class<?> responsetype
+	 * @return ResponseEntity<?>
+	 */
 	@Override
 	public <T> ResponseEntity<?> executeRestApi(ApiRequest<T> apiRequest, Class<?> responseType) {
 

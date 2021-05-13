@@ -29,7 +29,12 @@ public class WeatherController {
 
 	@Autowired
 	private IWeatherService weatherService;
-	
+	 
+	/**
+	 * Controller for fetch tomorrow's weather
+	 * @param zipCode
+	 * @return
+	 */
 	@GetMapping("/weather/forcast/nextday")
 	public ResponseEntity<WeatherResponse> getNextDayWeatherForcast(@ZipCodeValidation @RequestParam("zipcode") String zipCode) {
 		logger.debug("Executing getNextDayWeatherForcast method");
