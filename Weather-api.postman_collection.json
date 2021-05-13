@@ -1,0 +1,114 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Weather-api",
+		"_postman_id": "c38826fd-d631-afbb-ccaa-3c58bf95aa52",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9091/weather/forcast/nextday?zipcode=90011",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9091/weather/forcast/nextday?zipcode=90011",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"weather",
+						"forcast",
+						"nextday"
+					],
+					"query": [
+						{
+							"key": "zipcode",
+							"value": "90011",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "0e01aa55-f1f0-4ec9-a7fa-f6949d572992",
+					"name": "http://localhost:9091/weather/forcast/nextday?zipcode=90011",
+					"originalRequest": {
+						"url": {
+							"raw": "http://localhost:9091/weather/forcast/nextday?zipcode=90011",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9091",
+							"path": [
+								"weather",
+								"forcast",
+								"nextday"
+							],
+							"query": [
+								{
+									"key": "zipcode",
+									"value": "90011",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 13 May 2021 19:11:29 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=60",
+							"description": "Custom header"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"responseTime": 3270,
+					"body": "{\n    \"city\": \"Los Angeles\",\n    \"country\": \"US\",\n    \"weatherList\": [\n        {\n            \"temprature\": \"20.17\",\n            \"minTemprature\": \"20.17\",\n            \"maxTemprature\": \"21.08\",\n            \"dateTime\": \"2021-05-14 00:00:00\"\n        },\n        {\n            \"temprature\": \"18.66\",\n            \"minTemprature\": \"18.14\",\n            \"maxTemprature\": \"18.66\",\n            \"dateTime\": \"2021-05-14 03:00:00\"\n        },\n        {\n            \"temprature\": \"16.79\",\n            \"minTemprature\": \"16.79\",\n            \"maxTemprature\": \"16.79\",\n            \"dateTime\": \"2021-05-14 06:00:00\"\n        },\n        {\n            \"temprature\": \"15.98\",\n            \"minTemprature\": \"15.98\",\n            \"maxTemprature\": \"15.98\",\n            \"dateTime\": \"2021-05-14 09:00:00\"\n        },\n        {\n            \"temprature\": \"15.37\",\n            \"minTemprature\": \"15.37\",\n            \"maxTemprature\": \"15.37\",\n            \"dateTime\": \"2021-05-14 12:00:00\"\n        },\n        {\n            \"temprature\": \"16.47\",\n            \"minTemprature\": \"16.47\",\n            \"maxTemprature\": \"16.47\",\n            \"dateTime\": \"2021-05-14 15:00:00\"\n        },\n        {\n            \"temprature\": \"20.8\",\n            \"minTemprature\": \"20.8\",\n            \"maxTemprature\": \"20.8\",\n            \"dateTime\": \"2021-05-14 18:00:00\"\n        },\n        {\n            \"temprature\": \"21.91\",\n            \"minTemprature\": \"21.91\",\n            \"maxTemprature\": \"21.91\",\n            \"dateTime\": \"2021-05-14 21:00:00\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
